@@ -3,23 +3,41 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <title>Willkommen!</title>
+
+<script src="js/jquery-1.10.2.min.js"></script>
+
+<style>
+
+#header{
+}
+
+#bio{
+	display: none;
+}
+
+</style>
+
+<script>
+$( document ).ready(function() {
+
+	$(".reveal").click(function(e){
+		$("#bio").slideToggle();
+	});
+
+});
+</script>
+
+
 </head>
 <body>
 <header>
-	<h1>Willkommen!</h1>
+	<a class="reveal" href=#><h1>Wer bin ich?</h1></a>
 </header>
-<article>
-	<p>
-		Diese Seite wird von Ihrem eigenen Webserver auf Ihrem eigenen Rechner unter der Top-Level-Domain
-		<a href="http://localhost">localhost</a> ausgeliefert.
-	</p>
-	<p>
-		Sie werden hier Ihre Website erstellen, auf der Sie auch ohne Internetzugang surfen können.
-		Erst wenn Sie mit Ihrer Arbeit zufrieden sind, geht's in die Cloud.
-	</p>
-	<p>
-		Ihr Kursteam
-	</p>
+<article id="bio">
+	<img src="http://0.academia-photos.com/1096299/381007/462201/s200_alison.link.jpeg" />
+	<h2>Das bin ich!</h2>
 </article>
+
+	
 </body>
 </html>
